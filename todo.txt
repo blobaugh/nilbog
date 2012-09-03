@@ -1,0 +1,25 @@
+Result messages for content edit
+
+on save close window and refresh affected div
+
+**** KNOWN BUGS ****
+
+
+FUTURE WORK
+create mount points in page tree. users will be given a mount point and can edit anything under that point
+create hooks similar to wordpress. eg, on login, on logout, on content save, on content load, on display, etc 
+allow multiple templates to be packaged as themes a user can choose from
+use as a service. site simply uploads their design somewhere(anywhere) and includes the required nilbog js files. possibly allow some layout design like stiqr
+use services such as rpc.pingomatic.com for content aggregation
+clicking edit changes the div to an editor instead of opening a new window
+
+
+
+
+**** ISSUES I RAN INTO ****
+json requests returning null. fixed by not relying on builtin functions. built my own. see nilbog/js/login.js
+
+
+
+**** SECURITY CONCERN ****
+malicious user changes javascript login script to return a valid login. this is ok because the server ALSO has to setup a USER session in order for the login to be valid
